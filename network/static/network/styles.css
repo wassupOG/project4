@@ -1,0 +1,253 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222225;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.nav-container {
+  max-width: 100ch;
+  margin: auto;
+}
+
+.main-container {
+  margin: auto;
+  max-width: 100ch;
+  padding-bottom: 100px;
+}
+
+.flexbox-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item-inline {
+  display: inline-block;
+}
+
+.flexbox-container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+input {
+  background-color: #222225;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid #666669;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+.profile-plate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+#follow-plate {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.mrg-top-10 {
+  margin-top: 10px;
+}
+
+.mrg-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.nextPrev {
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #555666;
+  padding: 7px 15px;
+  width: 100px;
+  border-radius: 8px;
+}
+.nextPrev:active {
+  outline: none;
+  transform: translateY(1px);
+}
+
+.btn-submit, .btn-follow {
+  font-size: smaller;
+  color: rgba(255, 255, 255, 0.85);
+  border: 1px solid #555666;
+  outline: none;
+  border-radius: 8px;
+  background-color: #222225;
+  padding: 7px 15px;
+  transition: background-color 0.15s ease-in-out;
+}
+.btn-submit:hover, .btn-follow:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+.btn-submit:focus, .btn-follow:focus {
+  outline: none;
+}
+.btn-submit:active, .btn-follow:active {
+  outline: none;
+  transform: translateY(1px);
+}
+
+.btn-follow {
+  width: 100px;
+  font-size: medium;
+}
+
+.divider {
+  border-top: 1px solid #a4a6ab;
+  margin: 50px 16px;
+}
+
+.gradient-following {
+  font-size: smaller;
+  background: radial-gradient(circle at 10% 20%, rgb(50, 172, 109) 0%, rgb(130, 193, 48) 100.2%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+}
+
+.gradient-green {
+  background: radial-gradient(circle at 10% 20%, rgb(50, 172, 109) 0%, rgb(130, 193, 48) 100.2%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+}
+
+.textarea-style {
+  resize: none;
+  background-color: #444446;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.85);
+  width: 100%;
+  height: 100px;
+}
+
+.post {
+  position: relative;
+  background-color: rgba(52, 52, 52, 0.78);
+  margin: 30px 0px;
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.abs {
+  position: absolute;
+}
+
+.edit {
+  top: 10px;
+  right: 15px;
+}
+
+.user-post {
+  font-weight: bold;
+  top: 10px;
+  left: 15px;
+}
+
+.date-post {
+  font-size: small;
+  bottom: 10px;
+  right: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.like-count {
+  margin-left: 5px;
+}
+
+.gradient-fill {
+  background-image: radial-gradient(circle at 10% 20%, rgb(254, 113, 210) 0%, rgb(184, 96, 255) 90%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+}
+a:hover {
+  background-image: radial-gradient(circle at 10% 20%, rgb(254, 113, 210) 0%, rgb(184, 96, 255) 90%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  cursor: pointer;
+}
+
+.unliked {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  bottom: 10px;
+  left: 15px;
+  background-color: #444446;
+  padding: 5px 10px;
+  border-radius: 32px;
+}
+.unliked:active {
+  transform: translateY(1px);
+}
+.unliked:hover {
+  color: lightcoral;
+  cursor: pointer;
+}
+
+.liked {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  bottom: 10px;
+  left: 15px;
+  background: linear-gradient(-225deg, rgba(163, 69, 178, 0.9) 0%, rgba(211, 23, 114, 0.9) 52%, rgba(226, 27, 107, 0.9) 100%);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 5px 10px;
+  border-radius: 32px;
+}
+.liked:active {
+  transform: translateY(1px);
+}
+.liked:hover {
+  color: white;
+  background: linear-gradient(-225deg, rgb(163, 69, 178) 0%, rgb(211, 23, 114) 52%, rgb(226, 27, 107) 100%);
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 5px;
+  font-size: larger;
+  gap: 1rem;
+}
+.nav a:last-of-type {
+  margin-left: auto;
+}/*# sourceMappingURL=styles.css.map */
